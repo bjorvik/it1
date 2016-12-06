@@ -1,0 +1,224 @@
+/*felles*/
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+body {
+    margin:0;
+    padding:0;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: Shrikhand;
+    font-size: 70px;
+    margin-top: 0px;
+    padding: 0;
+}
+#overskrift {
+    padding: 0;
+    position: absolute;
+    top:0px;
+    left:50%;
+    width: 300px;
+    height: 50px;
+    margin-left: -150px;
+}
+#copyright img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 0px;
+}
+#copyright {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 15px;
+    height: 15px;
+}
+#copyright a:hover + div#copyrightText {
+    display: block;
+}
+#copyrightText {
+    position: absolute;
+    bottom: 2px;
+    left: 20px;
+    display: none;
+    font-family: Arial;
+    font-size: 10px;
+    width: 300px;
+
+}
+/*meny*/
+img#forside {
+    width: 100%;
+}
+.forside {
+    height: 150px;
+}
+.meny ul {
+    list-style-type: none;
+    margin: -30px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table;
+}
+.meny ul li {
+    display: inline-block;
+}
+.meny ul a {
+    padding:10px 50px;
+    color: #000;
+    font-family: "Century Gothic";
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.meny ul a:hover {
+    background-color: rgba(255, 255, 255, 0.80);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.meny ul li.men2 {
+    margin-left: 100px;
+}
+
+/*Fakta*/
+.faktaboks {
+    font-family: Arial;
+    margin-left: 25px;
+    margin-top: 30px;
+    border: solid 1px;
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.faktaboks h2 {
+    font-family: "Century Gothic";
+    margin-bottom: 25px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: #c3c3c3;
+}
+.faktaboks td.bold {
+    font-weight: bold;
+}
+.faktaboks td.notbold {
+    padding-left: 50px;
+}
+.faktaboks td {
+    padding-bottom: 10px;
+}
+#faktatekst {
+    position: absolute;
+    left:25px;
+    top:180px;
+    width: 600px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 20px;
+}
+#faktatekst #nullTekst {
+    width: 380px;
+    height: 220px;
+    float: left;
+}
+#faktatekst a {
+    font-weight: bold;
+}
+#faktatekst #top {
+    margin-top: 0px;
+}
+iframe {
+    border-radius: 10px;
+    position: relative;
+}
+#kart {
+    height: 520px;
+    width: 600px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+h2#kartoverskrift{
+    font-family: "Century Gothic";
+    position: absolute;
+    left:678px;
+    bottom: 490px;
+    font-size: 30px;
+}
+
+/*Aktiviteter*/
+img#norgeskart {
+    margin-top: 30px;
+}
+h2#linker {
+    font-family: "Century Gothic";
+    position: absolute;
+    right:600px;
+    bottom:350px;
+    font-size: 40px;
+}
+img#hvalsafari {
+    position: absolute;
+    width: 300px;
+    right: 600px;
+    bottom: 50px;
+}
+#aktivitetsInfo {
+    float: right;
+    width: 750px;
+    margin-top: 50px;
+}
+.infouUderakt {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    position: relative;
+}
+.infouUderakt img {
+    width: 400px;
+}
+.infouUderakt img:hover {
+    width: 380px;
+    /*her er det border så bilde ikke skal forflytte seg når det blir mindre*/
+    border-left: solid 10px #ffffff;
+    border-right:  solid 10px #ffffff;
+    border-top: solid 2.5px #ffffff;
+    border-bottom: solid 2.5px #ffffff;
+}
+img:hover#hvalsafari {
+    width: 280px;
+    /*her er det border så bilde ikke skal forflytte seg når det blir mindre*/
+    border: solid 10px #ffffff;
+}
+
+/*bilder*/ 
+td img {
+    border: solid #ffffff 5px;
+    border-radius: 30px;
+    margin-bottom: 15px;
+}
+td img:hover {
+    border: solid #000 0px;
+    width: 210px;
+}
+img.notfirst {
+    margin-left: 100px;
+}
+#bilder {
+    width: 845px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}

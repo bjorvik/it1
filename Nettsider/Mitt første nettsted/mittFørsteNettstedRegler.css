@@ -1,0 +1,188 @@
+/* felles css */
+body {
+    background-color: #333333;
+}
+h1 {
+    font-family: Bungee Shade;
+    color: deepskyblue;
+    font-size: 50px;
+    text-align: center;
+}
+ul li {
+    display: inline;
+    padding: 0px;
+}
+ul {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0px;
+}
+ul a {
+    width: 120px;
+    background-color: deepskyblue;
+    border: 2px solid deepskyblue ;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    margin: 2px;
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Arial";
+
+}
+#her {
+    background-color: #333333;
+    color: deepskyblue;
+}
+ul a:hover {
+    background-color: #333333;
+    color: deepskyblue;
+
+/* hjem css */
+}
+h2 {
+    font-family: "Century Gothic";
+    color: deepskyblue;
+}
+p {
+    font-family: Arial;
+    color: #696969;
+    font-weight: bold;
+}
+#innhold {
+    border: solid 2px;
+    border-color: deepskyblue;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ffffff;
+}
+#bunnboks {
+    border: solid 2px;
+    border-color: deepskyblue;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+    ul li {
+        display: block;
+    }
+}
+
+/* timeplan css */
+table {
+    border: solid 3px deepskyblue;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+
+}
+th {
+    border: solid 1px deepskyblue;
+    border-bottom: solid 5px deepskyblue;
+    font-family: "Century Gothic";
+    color: #696969;
+}
+td {
+    border: solid 1px deepskyblue;
+    text-align: center;
+    font-family: Arial;
+    color: #696969;
+}
+div.timeplan {
+    width:98%;
+    margin:1%;
+}
+table#tabell {
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+
+}
+.fys {
+    background-color: rgba(255, 192, 203, 0.96);
+}
+.his {
+    background-color: rgba(173, 216, 230, 0.9);
+}
+.it {
+    background-color: rgba(144, 238, 144, 0.87);
+}
+.krø {
+    background-color: rgba(255, 165, 0, 0.65);
+}
+.mar {
+    background-color: rgba(255, 255, 0, 0.62);
+}
+.nor {
+    background-color: white ;
+}
+.spa {
+    background-color: beige ;
+}
+.tek {
+    background-color: lightcyan ;
+}
+.tom {
+    background-color: #333333 ;
+}
+
+/* omMeg css */
+#profil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid deepskyblue 5px;
+}
+.profil {
+    margin-top: 50px;
+    width:210px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul#omMeg {
+    color: deepskyblue;
+}
+ul#omMeg a {
+    background-color: transparent;
+    border: transparent;
+    color: deepskyblue;
+}
+
+/* linker css */
+.linker {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+.linker h2 {
+    font-family: Arial;
+    text-align: center;
+}
+.linker a {
+    display: block;
+    background-color: deepskyblue;
+    color: #333333;
+    border:solid deepskyblue 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.linker a:hover {
+    background-color: #333333;
+    color: deepskyblue;
+
+}

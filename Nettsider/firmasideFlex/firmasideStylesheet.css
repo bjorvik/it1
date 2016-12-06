@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+}
+.innpakkning {
+    width: 100%;
+    background-color: transparent;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.topptekst {
+    display: flex;
+    flex-basis: 100%;
+    height: 100px;
+    padding: 5px;
+    order: 1;
+    box-shadow: #000000;
+}
+#logo {
+    flex-basis: 137px;
+    height: 100px;
+    order: 1;
+    padding-left: 15px;
+}
+#mellom {
+    flex: 1;
+    order: 2;
+}
+#knapp {
+    flex-basis: 100px;
+    height: 100px;
+    order: 3;
+}
+#logo img {
+    height: 100px;
+}
+.meny {
+    background-color: #0090BE;
+    text-align: center;
+    order: 2;
+    text-decoration: none;
+    font-family: Helvetica;
+    border-top: solid 3px #0077a3;
+    display: none;
+}
+.meny div {
+    margin: auto;
+    width: 50%;
+    border-bottom: solid 1px #ffffff;
+    padding: 15px;
+    color: #ffffff;
+}
+.meny div:hover {
+    background-color: white;
+    color: #0090BE;
+}
+a {
+    text-decoration: none;
+}
+.innhold {
+    display: flex;
+    background-color: white;
+    flex: 1;
+    order: 3;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#profilbilde {
+    order: 1;
+
+}
+.bunntekst {
+    flex-basis: 100%;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    order: 4;
+    font-family: Arial;
+    color: white;
+}
+
+/* koden under er hentet fra "http://callmenick.com/post/animating-css-only-hamburger-menu-icons" */
+
+/* common css*/
+.c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    width: 96px;
+    height: 96px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+    outline: none;
+}
+
+.c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 44px;
+    left: 18px;
+    right: 18px;
+    height: 8px;
+    background: #0090BE;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #0090BE;
+    content: "";
+}
+
+.c-hamburger span::before {
+    top: -20px;
+}
+
+.c-hamburger span::after {
+    bottom: -20px;
+}
+
+/* css cross */
+.c-hamburger--htx {
+    background-color: transparent;
+}
+
+.c-hamburger--htx span {
+    transition: background 0s 0.3s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+
+.c-hamburger--htx span::before {
+    transition-property: top, transform;
+}
+
+.c-hamburger--htx span::after {
+    transition-property: bottom, transform;
+}
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active {
+    background-color: transparent;
+}
+
+.c-hamburger--htx.is-active span {
+    background: none;
+}
+
+.c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+    transition-delay: 0s, 0.3s;
+}

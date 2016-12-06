@@ -1,0 +1,276 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Alt over menyen */
+.topptekst {
+    margin-left: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.topptekst img {
+    border: solid 1px #c8c8c8;
+    margin-top: 5px;
+}
+.aktuelt {
+    width: 640px;
+    border-bottom: solid 1px #818181;
+    color:  #3f3f3f;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.aktuelt p {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.nettradio {
+    margin-left: 10px;
+    width: 340px;
+    border-bottom: solid 1px #818181;
+    color:  #3f3f3f;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 12px;
+}
+.nettradio p {
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.johaug {
+    height: 120px;
+    border-top: solid 1px #c8c8c8;
+    margin-top: 5px;
+}
+#johaugBildeLink {
+    width: 200px;
+    border-top: solid 1px #c8c8c8;
+    margin-top: 5px;
+}
+.johaug p {
+    color:  #3f3f3f;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 0;
+}
+.johaug p:hover {
+    text-decoration: underline;
+}
+img#ytring {
+    border: none;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.ytring p {
+    color:  #3f3f3f;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 50px;
+    top: -10px;
+    position: relative;
+}
+.ytring p:hover {
+    text-decoration: underline;
+}
+img#hillaryTrump {
+    margin-left: 20px;
+}
+.debatt p {
+    color:  #3f3f3f;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 15px;
+    margin: 0;
+    margin-left: 20px;
+}
+.debatt p:hover {
+    text-decoration: underline;
+}
+img#radioVindu {
+    margin-left: 10px;
+    border: 0px;
+    margin-bottom: 25px;
+}
+
+/* Menybar */
+.menybar {
+    background-color: #000000;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+#mellomromStart {
+    width: 120px;
+}
+a img#nrk {
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 15px;
+    height: 20px;
+    position: relative;
+}
+.mellomrom {
+    flex: 1;
+}
+a img.tregrå {
+    position: relative;
+    height: 25px;
+    top: 12.5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.menybar a:hover {
+    background-color: #818181;
+}
+#nrksuperlink:hover > #nrksuperbilde {
+    -webkit-filter: brightness(500%); /* Brightness(500%) for å få bildet helt hvitt */
+}
+#yrlink:hover > #yrbilde {
+    -webkit-filter: brightness(500%);
+}
+#nrkp3link:hover > #nrkp3bilde {
+    -webkit-filter: brightness(500%);
+}
+input[type="text"] {
+    display: block;
+    width: 170px;
+    height: 20px;
+    padding: 7px;
+    color: #818181;
+    border: solid 1px #818181;
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 7px;
+    font-size: medium;
+    font-weight: 100;
+    margin-right: 150px;
+    margin-left: 15px;
+}
+
+/* Saker */
+.kropp {
+    display: flex;
+}
+.hovedboks {
+    margin-left: 140px;
+    width: 640px;
+}
+.hovedboks img {
+    border: solid 1px #c8c8c8;
+    margin-top: 5px;
+}
+.sakIS {
+    border-top: solid 1px #c8c8c8;
+    width: 640px;
+    margin-top: 15px;
+}
+.sakIS p {
+    font-family: Arial;
+    color: black;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 0;
+}
+.clickBait {
+    width: 640px;
+    height: 200px;
+}
+.clickBait:hover > #svovel {
+    text-decoration: underline;
+}
+.clickBait:hover > #fyr {
+    text-decoration: underline;
+}
+#svovel {
+    font-size: 108px;
+}
+.sakToyota {
+    border-top: solid 1px #c8c8c8;
+    width: 310px;
+    position: relative;
+    float: left;
+}
+.sakToyota p {
+    font-family: Arial;
+    color: black;
+    font-weight: 900;
+    margin: 0;
+}
+p#E24 {
+    color: red;
+    width: 60px;
+    float: left;
+    font-size: 25px;
+}
+p#kallerTilbake {
+    font-size: 25px;
+}
+p#bilerINorge {
+    font-size: 51px;
+}
+.toyotaTekst:hover > #E24 {
+    text-decoration: underline;
+}
+.toyotaTekst:hover > #kallerTilbake {
+    text-decoration: underline;
+}
+.toyotaTekst:hover > #bilerINorge {
+    text-decoration: underline;
+}
+.sakKronprins {
+    border-top: solid 1px #c8c8c8;
+    float: right;
+    width: 310px;
+}
+.sakKronprins img {
+    margin-left: 20px;
+}
+.sakKronprins p {
+    font-family: Arial;
+    color: black;
+    font-weight: 900;
+    margin: 0;
+}
+.kronprinsTekst {
+    margin-left: 330px;
+}
+p#røper {
+    font-size: 27px;
+}
+p#formue {
+    font-size: 43px;
+}
+.kronprinsTekst:hover > #røper {
+    text-decoration: underline;
+}
+.kronprinsTekst:hover > #formue {
+    text-decoration: underline;
+}
+
+/* Sideboks */
+.sideboks {
+    margin-top: 15px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+}
+img#nyhetstips {
+    width: 327px;
+    margin-top: 20px;
+}
+img#nrkTV {
+    background-color: #000000;
+    margin-top: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link rel="stylesheet" href="firmasideStylesheet.css">
+    <meta charset="UTF-8">
+    <title>Firmaside</title>
+</head>
+<body>
+<div class="innpakkning">
+</div>
+
+<div class="topptekst">
+    <div id="knapp">
+        <button class="c-hamburger c-hamburger--htx">
+            <span>toggle menu</span>
+        </button>
+    </div>
+    <div id="mellom"></div>
+    <div id="logo">
+        <a href="firmasideFlexIndex.html"> <img src="genericLogoBadgeSmall.png" alt=""> </a>
+    </div>
+</div>
+
+<div class="meny">
+    <a href="firmasideFlexIndex.html"> <div> Opt 1 </div> </a>
+    <a href="firmasideFlexSide2.html"> <div> Opt 2 </div> </a>
+    <a href="firmasideFlexSide3.html"> <div> Opt 3 </div> </a>
+</div>
+<div class="innhold">
+    <div id="profilbilde"></div>
+</div>
+<div class="bunntekst">
+
+</div>
+</div>
+</body>
+</html>
+
+<!-- koden under er hentet fra "http://callmenick.com/post/animating-css-only-hamburger-menu-icons" -->
+<script>
+    (function() {
+
+        "use strict";
+
+        var toggles = document.querySelectorAll(".c-hamburger");
+
+        for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+        };
+
+        function toggleHandler(toggle) {
+            toggle.addEventListener( "click", function(e) {
+                e.preventDefault();
+                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+            });
+        }
+
+    })();
+    <!-- koden under har jeg skrevet selv ved hjelp av w3schools -->
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $(".meny").toggle();
+        });
+    });
+</script>

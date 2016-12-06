@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flere innpakninger</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f8f8;
+            color: #222222;
+            margin: 0;  /* setter margen til kanten av siden lik null */
+        }
+        .innpakningTopp {
+            background-color: #404040; /* en mørk gråfarge */
+            width: 70%; /* innpakningens bredde */
+            margin: auto;
+            display: flex; /* angir at vi vil bruke flexboks */
+            flex-direction: row; /* plasserer bokser i en rad */
+            flex-wrap: wrap; /* lar oss bryte rader */
+        }
+        .topptekst {
+            flex-basis: 100%; /* fyller innpakningens bredde */
+            height: 120px;
+            background-color: #909090;
+            padding: 5px;
+            margin: 5px;
+            order: 1; /* angir rekkefølgen på boksene */
+        }
+        .meny {
+            flex-basis: 200px; /* aldri smalere enn 200px */
+            /* height: 200px; /* spesifiserer høyden til menyen */
+            background-color: #ff9757;
+            padding: 5px;
+            margin: 5px;
+            order: 1; /* angir rekkefølgen på boksene */
+        }
+        .innhold {
+            background-color: #909090; /* en lys gråfarge */
+            padding: 5px; /* avstand mellom bokskant og innhold */
+            margin: 5px; /* luft rundt innholdsboks */
+            flex: 1; /* fyller ut all ledig plass i bredden */
+            order: 2; /* angir rekkefølgen på boksene */
+        }
+        .footer {
+            flex-basis: 100%; /* fyller innpakningens bredde */
+            height: 50px;
+            background-color: #909090;
+            padding: 5px;
+            margin: 5px;
+            order: 4; /* angir rekkefølgen på boksene */
+        }
+        h1 {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 50pt;
+            color: #ff9757;
+        }
+
+        .innpakningMidt {
+            background-color: #a79e65; /* en mørk gråfarge */
+            width: 70%; /* innpakningens bredde */
+            margin: auto;
+            margin-top: 10px;
+            display: flex; /* angir at vi vil bruke flexboks */
+            flex-direction: row; /* plasserer bokser i en rad */
+            flex-flow: wrap;
+            justify-content: space-around;
+        }
+        .boksKolonne {  /* en boks som legger ting inni som kolonner */
+            background-color: #73afb6;
+            flex-basis: 150px;  /* aldri smalere enn 150px, gjør så ny linje kommer kjappere */
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .rad {
+            height: 50px;
+            padding: 5px; /* avstand mellom bokskant og innhold */
+            margin: 5px; /* luft rundt boksen */
+            /*flex: 1; /* fyller ut all ledig plass i bredden */
+            background-color: #e2d893;
+        }
+
+        .innpakningBunn {
+            background-color: #ffffff; /* en mørk gråfarge */
+            width: 100%; /* innpakningens bredde */
+            margin: auto;
+            margin-top: 10px;
+            display: flex; /* angir at vi vil bruke flexboks */
+            flex-direction: row; /* plasserer bokser i en rad */
+            flex-flow: wrap;
+        }
+
+        .toppBilde {
+            flex-basis: 100%; /* fyller innpakningens bredde */
+            height: 300px;  /* høyden til bildet er fast */
+            background-color: #f2eeb3;
+            padding: 5px;
+            margin: 1px;
+            background-image: url("brightIdeas_wide.png");
+            background-position: center center;
+            background-size: cover;
+            order: -1; /* angir rekkefølgen på boksene -1 er før alle andre */
+        }
+
+        .dobbeltBilde {
+            flex-basis: 100%; /* fyller innpakningens bredde */
+            background-color: #ffffff;
+            display: flex;  /* flexer bildene inni */
+            flex-direction: row;
+            flex-flow: wrap;
+        }
+        .bildeNormalt {
+            background-color: #bfaf80; /* en lys gråfarge */
+            flex-basis: 350px;  /* aldri smalere enn 200px */
+            height: 350px;  /* høyde på bildet */
+            padding: 5px; /* avstand mellom bokskant og innhold */
+            flex-grow: 3;   /* vokser litt saktere enn rask vekst */
+            margin: 1px;
+            background-position: center center;
+            background-size: cover;
+        }
+        .bildeGrowFast {
+            background-color: #8c6954;
+            flex-basis: 350px;  /* aldri smalere enn 200px */
+            height: 350px;  /* høyde på bildet */
+            padding: 5px; /* avstand mellom bokskant og innhold */
+            margin: 1px; /* luft rundt innholdsboks */
+            flex-grow: 4;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .img1 {background-image: url("techToMoney.png");}
+        .img2 {background-image: url("dna_dog.png");}
+        .img3 {background-image: url("technology_hero.png");}
+        .img4 {background-image: url("wearableTech.png");}
+
+    </style>
+</head>
+<body>
+
+<div class="innpakningTopp">
+
+    <div class="topptekst">
+        <h1>Overskrift </h1>
+    </div>
+
+    <div class="meny">
+        Her kan du lage en meny
+        <br><br><br><br><br><br><br>
+    </div>
+
+    <div class="innhold">
+        Her kommer innholdet på nettsiden
+    </div>
+
+    <div class="footer">
+        Her kommer footer
+    </div>
+
+</div> <!-- innpakningTopp -->
+
+
+<div class="innpakningMidt">
+    <div class="boksKolonne">   <!-- boks med kolonner -->
+        <div class="rad"> En </div>
+        <div class="rad"> To </div>
+        <div class="rad"> Tre </div>
+    </div>
+    <div class="boksKolonne">
+        <div class="rad"> En </div>
+        <div class="rad"> To </div>
+        <div class="rad"> Tre </div>
+    </div>
+    <div class="boksKolonne">
+        <div class="rad"> En </div>
+        <div class="rad"> To </div>
+        <div class="rad"> Tre </div>
+    </div>
+</div>  <!-- innpakningMidt -->
+
+
+<div class="innpakningBunn">
+
+    <div class="toppBilde">
+        Bilde topp
+    </div>
+
+    <div class="dobbeltBilde">
+        <div class="bildeNormalt img1">
+            Venstre bilde
+        </div>
+
+        <div class="bildeNormalt img2">
+            Høyre bilde
+        </div>
+    </div>
+
+    <div class="dobbeltBilde">
+        <div class="bildeNormalt img3">
+            Venstre bilde er normalt
+        </div>
+
+        <div class="bildeGrowFast img4">
+            Øker fortere bilde
+        </div>
+    </div>
+
+
+</div> <!-- innpakningBunn -->
+
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+/* Felles */
+body {
+    background-image: url("usaFlagg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.innpakkning {
+    width: 800px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.topptekst {
+    flex-basis: 100%;
+    height: 90px;
+    background: linear-gradient(to right, #d01312 50%, #007dc6 50%);
+    padding: 5px;
+    margin: 5px;
+}
+h1 {
+    font-family: 'Special Elite';
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+.meny {
+    flex-basis: 100%;
+    height: 50px;
+    margin: 5px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.overskrift {
+    flex-basis: 100%;
+    text-align: center;
+    font-family: Arial;
+    font-size: 20px;
+}
+.overskrift h2 {
+    margin: 0;
+}
+/* Info */
+.trump {
+    margin: 5px;
+    margin-right: 0;
+    height: 150px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    background-color: #d01312;
+}
+.trump img {
+    width: 200px;
+}
+img#vs {
+    width: 50px;
+    height: 67px;
+    margin-top: 5px;
+    padding: 41.5px 5px;
+    background: linear-gradient(to right, #d01312 50%, #007dc6 50%);
+}
+.hillary {
+    margin: 5px;
+    margin-left: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: #007dc6;
+}
+.hillary img {
+    width: 200px;
+}
+.info {
+    flex-basis: 100%;
+    margin: 5px;
+    display: flex;
+}
+.kandidatInfo {
+    flex: 1;
+}
+.faktaboks {
+    font-family: Arial;
+    border: solid 1px;
+    width: 350px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin: auto;
+}
+.faktaboks h2 {
+    font-family: "Century Gothic";
+    margin-bottom: 25px;
+    margin-top: 0px;
+    text-align: center;
+    background-color: #c3c3c3;
+}
+.faktaboks td.bold {
+    font-weight: bold;
+}
+.faktaboks td.notbold {
+    padding-left: 50px;
+}
+.faktaboks td {
+    padding-bottom: 10px;
+}
+/* Resultater */
+.statistikk {
+    flex-basis: 100%;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.underoverskriftRep {
+    flex-basis: 100%;
+    text-align: center;
+    height: 30px;
+    margin-top: 30px;
+}
+.underoverskriftRep h3{
+    font-family: Arial;
+    margin: 0;
+}
+.oppslutningRep {
+    flex-basis: 100%;
+    display: flex;
+}
+.republikanerRep {
+    height: 50px;
+    background-color: #d01312;
+    flex-grow: 290;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+.demokratRep {
+    height: 50px;
+    background-color: #007dc6;
+    flex-grow: 232;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+
+
+
+.underoverskriftStemmer {
+    flex-basis: 100%;
+    text-align: center;
+    height: 30px;
+    margin-top: 30px;
+}
+.underoverskriftStemmer h3{
+    font-family: Arial;
+    margin: 0;
+}
+.oppslutningStemmer {
+    flex-basis: 100%;
+    display: flex;
+}
+.republikanerStemmer {
+    height: 50px;
+    background-color: #d01312;
+    flex-grow: 47.2;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+.demokratStemmer {
+    height: 50px;
+    background-color: #007dc6;
+    flex-grow: 47.9;
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.underoverskriftValgkart {
+    flex-basis: 100%;
+    text-align: center;
+    height: 30px;
+    margin-top: 30px;
+    font-family: Arial;
+}
+.underoverskriftValgkart h3 {
+    margin: 0;
+}
+img#valgkart {
+    margin: auto;
+    margin-top: -30px;
+}
+img#valgkart:hover {
+    filter: grayscale(100%);
+}

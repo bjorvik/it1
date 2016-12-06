@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forside</title>
+    <style>  
+        body {
+            background-color: black;
+        }
+        h1 {
+            text-align: center;
+            font-family: "Century Gothic";
+            font-size: 100px;
+            color: #ffffff;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        h1:hover {
+            color: deepskyblue;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .bilder {
+            margin-left: auto;
+            margin-right: auto;
+            width: 852px;
+        }
+        img {
+            border-radius: 15px;
+            border: solid;
+            border-color: white;
+            border-width: 5px;
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .alle {
+            margin-top: 140px;
+        }
+        a {
+            text-decoration: none;
+        }
+        img:hover {
+            border-color: deepskyblue;
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+        #sidebla {
+            position: relative;
+        }
+        img#sidebla{
+            border: none;
+            border-radius: 0px;
+            bottom: 0px;
+            left: 0px;
+            position: absolute;
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+            opacity: 0;
+        }
+        img:hover#sidebla {
+            opacity: 1;
+        }
+        </style>
+</head>
+<body>
+<div class="alle">
+<h1>
+    Foto-album
+</h1>
+<div class="bilder">
+    <a href="Fuelband.html"> <img src="Fuelband_thumb.jpg" alt="Fuelband" title="se i fullskjerm"> </a>
+    <a href="Hodetelefoner.html"> <img src="Hodetelefoner_thumb.jpg" alt="Hodetelefoner" title="se i fullskjerm"> </a>
+    <a href="Kortstokk.html"> <img src="Kortstokk_thumb.jpg" alt="Kortstokk" title="se i fullskjerm"> </a>
+    <a href="Penner.html"> <img src="Penner_thumb.jpg" alt="Penner" title="se i fullskjerm"> </a>
+</div>
+</div>
+<a href="../Mitt%20første%20nettsted/linker.html"> <img id="sidebla" src="sideBla.png"> </a>
+</body>
+</html>
